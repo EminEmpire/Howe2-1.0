@@ -8,6 +8,7 @@ class BlogPost(models.Model):
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    published_date = models.DateTimeField(null=True, blank=True)  # New field
     thumbnail = ImageCropField(upload_to='thumbnails/')
     cropping = ImageRatioField('thumbnail', '300x300')
     thumbnail_square = ImageSpecField(source='thumbnail',
