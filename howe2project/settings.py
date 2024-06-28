@@ -161,3 +161,11 @@ ACCOUNT_USERNAME_REQUIRED = False
 # Redirect URLs
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+THUMBNAIL_ALIASES = {
+    '': {
+        'thumbnail': {'size': (300, 300), 'crop': True},
+    },
+}
+
+THUMBNAIL_BASEDIR = 'thumbnails'

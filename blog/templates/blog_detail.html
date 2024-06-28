@@ -20,7 +20,7 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-8 offset-md-2">
-            <img class="img-fluid mb-4" src="{{ post.thumbnail.url }}" alt="{{ post.title }}">
+            <img class="img-fluid mb-4" src="{{ post.thumbnail_square.url }}" alt="{{ post.title }}">
             <p>{{ post.content }}</p>
             {% for image in post.images.all %}
                 <img class="img-fluid my-2" src="{{ image.image.url }}" alt="{{ image.caption }}">
