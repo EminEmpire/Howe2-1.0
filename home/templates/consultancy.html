@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+   
+{% block content %}
+
+  
+
+<header class="text-center text-white masthead" style="background: linear-gradient(#00518c 77%, white 98%), #00518c;">
+    <div class="masthead-content">
+        <div class="container" data-aos="fade"><span data-aos="fade" style="font-size: 48px;font-family: Catamaran, sans-serif;text-shadow: 0px 2px 3px var(--bs-emphasis-color);border-bottom: 3.5px solid rgb(154,23,28);"><strong>Consultancy</strong></span>
+            <section class="index-howto-alt py-3">
+                <div class="container" data-aos="zoom-in-down" data-aos-duration="650" style="font-family: Catamaran, sans-serif;font-size: 18px;"><span style="text-shadow: 0px 1px 6px var(--bs-emphasis-color);margin-right: 0px;">Welcome to our Consultancy Services page. We offer a range of tailored solutions to meet the diverse needs of our clients. Our services include comprehensive training needs analysis, health and social care assessments, and specialized consultancy for Autism, ADHD, and Neurodiversity. With over twenty years of experience, we provide valuable insights and practical support for companies of all sizes.</span></div>
+            </section>
+        </div>
+    </div>
+    <div data-aos="flip-down" data-aos-duration="1000" class="bg-circle-4 bg-circle"></div>
+    <div data-aos="zoom-in" data-aos-delay="500" class="bg-circle-2 bg-circle" style="transform: rotate(-63deg);"></div>
+    <div class="container" style="margin-top: 25px;">
+        <div class="row">
+            <div class="col-md-4" data-aos="zoom-in-right" data-aos-delay="500">
+                <header><span style="font-weight: bold;font-family: Merienda, serif;font-size: 25px;"><strong>Training Needs Analysis</strong></span>
+                    <p style="font-size: 17px;font-family: Lato, sans-serif;margin-top: 15px;">Description :<br>&nbsp;Explanation of the comprehensive training needs analysis service available for companies of all sizes, developed over the last twenty years.</p>
+                </header>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="600">
+                <header><span style="font-weight: bold;font-family: Merienda, serif;font-size: 25px;"><strong>Health &amp;</strong>&nbsp;Social Care<br>Assessments</span>
+                    <p style="font-size: 17px;font-family: Lato, sans-serif;margin-top: 15px;">Description : <br>Support for health and social care assessments, including real-life insights into Autism, ADHD, Neurodiversity, and Mental Health. Highlight Mark’s personal and professional experience.</p>
+                </header>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in-left" data-aos-delay="700">
+                <header><span style="font-weight: bold;font-family: Merienda, serif;font-size: 25px;">&nbsp;<strong>Coming Soon :</strong><br><strong>&nbsp;Howe2 Understand Autism, ADHD, and Neurodiversity</strong></span>
+                    <p style="font-size: 17px;font-family: Lato, sans-serif;margin-top: 15px;">Overview of upcoming services<br> • “One-on-One Consultancy”<br>Details: Tailored sessions for adults recently diagnosed, providing accurate information, support, guidance, and legal aspects.<br> • “Inclusive Business Support”<br>Details: Helping businesses become more inclusive for employees with Autism, ADHD, or Neurodiversity.<br> • “Parental Support Consultancy”<br>Details: Assisting parents with guidance on legal aspects for schools and educational establishments.<br> • “Family Impact Consultancy”<br>&nbsp;Details: Providing support for families affected by these conditions.<br><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-double-down" style="font-size: 43px;margin-top: 10px;">
+                            <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+                            <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+                        </svg><br></p>
+                </header>
+            </div>
+        </div>
+    </div><a class="btn btn-xl rounded-pill mt-3 herobtn" role="button" data-aos="zoom-in" data-aos-delay="100" href="contact.html" style="margin-bottom: 25px;">BOOK YOUR<br>CONSULTANCY</a>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" data-aos="zoom-in-right" data-aos-delay="50" style="margin-bottom: 5px;"><img class="img-thumbnail" src="{% static 'img/400PngdpiLogoCropped.png' %}" style="height: auto;width: 421px;margin-bottom: 0px;"></div>
+            <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="200" style="margin-bottom: 5px;"><img class="img-thumbnail" src="{% static 'img/400JpgdpiLogoCropped.jpg' %}" style="height: auto;width: 421px;"></div>
+            <div class="col-md-4" data-aos="zoom-in-left" data-aos-delay="400"><img class="img-thumbnail" src="{% static 'img/neuro.png' %}" style="height: auto;width: 421px;"></div>
+        </div>
+    </div>
+</header>
+
+
+
+{% endblock %}

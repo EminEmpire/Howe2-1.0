@@ -1,0 +1,90 @@
+html, body {
+  overflow-x: hidden;
+}
+
+.navbar-custom {
+  background: rgba(227,219,219,0.64);
+  transition: background-color 0.5s;
+}
+
+.logo {
+  height: 140px;
+  transition: height 0.5s;
+}
+
+.navbar-custom.solid {
+  background-color: rgba(255,255,255,0.99);
+}
+
+.navbar-toggler {
+  transition: var(--bs-navbar-toggler-transition);
+  line-height: 1;
+  font-size: var(--bs-navbar-toggler-font-size);
+  color: var(--bs-navbar-color);
+  background: #00518c;
+  margin-right: 20px;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header.masthead .masthead-content .masthead-heading {
+  font-size: 3rem;
+  font-family: Catamaran, sans-serif;
+  margin-top: 15px;
+  text-shadow: 0px 2px 2px var(--bs-emphasis-color);
+}
+
+header.masthead .masthead-content .masthead-subheading {
+  font-size: 2rem;
+  font-family: Lato, sans-serif;
+  margin-top: 0px;
+  text-shadow: 0px 2px 2px var(--bs-emphasis-color);
+}
+
+.btn-xl.herobtn {
+  background: #d2252b;
+  color: rgb(255,255,255);
+}
+
+.btn-xl.herobtn:hover {
+  background: #b1050b;
+  color: rgb(255,255,255);
+  cursor: pointer;
+}
+
+.nav-item a:hover {
+  color: #e8242b !important;
+}
+
+.nav-item a.active {
+  color: #00518c !important;
+}
+
+footer {
+  background: linear-gradient(0deg, #00518c 20%, white 100%);
+}
+
+@media (min-width: 768px) {
+  footer {
+    background: linear-gradient(0deg, #00518c 10%, white 100%);
+  }
+}
+
+.submit {
+  background: rgb(232,36,43);
+  color: rgb(255,255,255);
+}
+
+.submit:hover {
+  background: rgb(106,17,21);
+  color: rgb(255,255,255);
+}
+
+.btn-primary {
+  background-color: #027bd9 !important;
+  border: none;
+}
+

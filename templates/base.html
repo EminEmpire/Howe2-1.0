@@ -1,0 +1,159 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en" style="background: linear-gradient(black, rgb(152,152,152) 59%, white);">
+
+<head>
+
+    {% block meta %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="canonical" href="https://howe2training.com/">
+    <meta property="og:url" content="https://howe2training.com/">
+    <meta name="keywords" content="Howe2 Training &amp; Consultancy, health and social care training, consultancy services, real-life training experiences, Mark Howe-Senior, Health &amp; Social Care Consultancy of the Year 2024, Diversity &amp; Neurodiversity Excellence Awards 2024, Best Nationwide Health &amp; Social Care Training Company 2023, children's social care, adult social care, healthcare training, SME News Midlands Enterprise Awards, learning disability training, autism training, expert with lived experience, Oliver McGowan Mandatory Training">
+    <meta name="description" content="Howe2 Training &amp; Consultancy, founded by Mark Howe-Senior in 2019, specializes in high-quality training and consultancy services in the health and social care sector. With a focus on meaningful, real-life training experiences, we have earned prestigious awards such as the Health &amp; Social Care Consultancy of the Year 2024. Despite challenges, our commitment to excellence has driven our rapid growth and industry recognition.">
+    <meta name="twitter:description" content="Howe2 Training &amp; Consultancy, founded by Mark Howe-Senior in 2019, specializes in high-quality training and consultancy services in the health and social care sector. With a focus on meaningful, real-life training experiences, we have earned prestigious awards such as the Health &amp; Social Care Consultancy of the Year 2024. Despite challenges, our commitment to excellence has driven our rapid growth and industry recognition.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://howe2training.com/assets/img/01.webp">
+    <meta property="og:image" content="https://howe2training.com/assets/img/01.webp">
+    <meta property="og:type" content="website">
+    <meta name="twitter:title" content="Howe2 Training &amp; Consultancy">
+    {% endblock %}
+
+    {% block corejs %}
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "Howe2 Training & Consultancy",
+            "url": "https://howe2training.com/"
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="{% static 'js/aos.min.js' %}"></script>
+    <script src="{% static 'js/bs-init.js' %}"></script>
+    <script src="{% static 'js/Counting-counting.js' %}"></script>
+    <script src="{% static 'js/courselist.js' %}"></script>
+    <script src="{% static 'js/navbar.js' %}" defer></script>
+    {% endblock %}
+
+    {% block corecss %}
+    <link rel="icon" type="image/png" sizes="2335x1136" href="{% static 'img/logo.png' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aos.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Feature-Section-MD.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Features-Centered-Icons-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/heroshapes.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Pretty-Footer-.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Side-By-Side-Section-sideBySide.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    {% endblock %}
+
+    <title>Howe2 Training &amp; Consultancy</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-dark">
+        <div class="container"><a class="navbar-brand" href="{% url 'home' %}"><img class="logo" src="{% static 'img/logo.png' %}" alt="Logo" style="height: 100px;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarNav-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{% url 'home' %}" style="color: rgb(65,65,66);font-size: 1rem;">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'trainingcourses' %}" style="color: rgb(65,65,66);font-size: 1rem;">TRAINING COURSES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'consultancy' %}" style="color: rgb(65,65,66);font-size: 1rem;">CONSULTANCY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'aboutus' %}" style="color: rgb(65,65,66);font-size: 1rem;">ABOUT US</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="color: rgb(65,65,66);font-size: 1rem;">BLOG</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'contactus' %}" style="color: rgb(65,65,66);font-size: 1rem;">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    {% block content %}
+    {% endblock %}
+
+    <footer>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 footer-navigation">
+                <h3><a href="#"><img class="logo" src="{% static 'img/logo.png' %}"></a></h3>
+                <p class="links"><a href="{% url 'home' %}">Home</a><strong> · </strong><a href="{% url 'trainingcourses' %}">Training Courses</a><strong> · </strong><a href="{% url 'consultancy' %}">Consultancy</a><strong> · </strong><a href="{% url 'aboutus' %}">About Us</a><strong> · </strong><a href="{% url 'contactus' %}">Contact</a></p>
+                <p class="company-name" style="color: var(--bs-emphasis-color);">Howe2 Training &amp; Consultancy&nbsp; © 2024</p>
+            </div>
+            <div class="col-sm-6 col-md-4 footer-contacts">
+                <div><i class="fa fa-phone footer-contacts-icon"></i><a id="number-1" href="tel:+44 7596 086334" style="color: rgba(180,180,180,0);"><span style="color: rgb(51, 56, 59); background-color: rgba(255, 255, 255, 0);">+44 7596 086334</span></a></div>
+                <div>
+                    <p> <i class="fa fa-envelope footer-contacts-icon"></i><a href="mailto:info.Howe2training@gmail.com" style="font-size: 14px;"><span style="color: rgb(51, 56, 59);">info.Howe2training@gmail.com</span></a></p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center footer-about">
+                <h4 style="font-size: 20px;font-family: Merienda, serif;"><span style="color: rgb(0, 0, 0);">Follow Us :</span></h4>
+                <div class="social-links social-icons"><a href="https://www.facebook.com/Howe2Training/?locale=en_GB" target="_blank"><i class="fa fa-facebook"></i></a><a href="https://x.com/howe2C" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-twitter-x">
+                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"></path>
+                        </svg></a><a href="https://www.linkedin.com/company/howe2-training-consultancy/?originalSubdomain=uk" target="_blank"><i class="fa fa-linkedin"></i></a></div>
+            </div>
+        </div>
+        <div style="text-align: center;font-size: 13px;"><span><span style="font-weight: normal !important;">Website Created by :&nbsp;</span></span><a href="https://www.eminempire.com/" style="color: rgb(255,209,49);text-decoration: none;" target="_blank">EminEmpire</a></div>
+    </footer>
+
+    {% block postloadjs %}
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbar = document.querySelector('.navbar-custom');
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            const navbarNav = document.querySelector('#navbarNav-1');
+            const logo = document.querySelector('.navbar-brand img');
+    
+            // Handle navbar toggler click
+            navbarToggler.addEventListener('click', function() {
+                setTimeout(function() {
+                    if (navbarNav.classList.contains('show')) {
+                        navbar.classList.add('solid');
+                    } else {
+                        navbar.classList.remove('solid');
+                    }
+                }, 2); // Slight delay to allow for class change
+            });
+    
+            navbarNav.addEventListener('shown.bs.collapse', function () {
+                navbar.classList.add('solid');
+            });
+    
+            navbarNav.addEventListener('hidden.bs.collapse', function () {
+                navbar.classList.remove('solid');
+            });
+    
+            // Handle scroll event
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 0) {
+                    navbar.classList.add('solid');
+                    logo.style.height = '100px';
+                } else {
+                    navbar.classList.remove('solid');
+                    logo.style.height = '';
+                }
+            });
+    
+            // Add active class to the current active page link
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            navLinks.forEach(function(link) {
+                if (link.href === window.location.href) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+    {% endblock %}
+
+</body>
+
+</html>
