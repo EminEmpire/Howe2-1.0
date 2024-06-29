@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['howe2-howe2.dfiod7.easypanel.host', 'howe2training.com', 'www.howe2training.com', 'localhost', '0.0.0.0',  '127.0.0.1']
 # Application definition
@@ -182,3 +182,4 @@ THUMBNAIL_ALIASES = {
 }
 
 THUMBNAIL_BASEDIR = 'thumbnails'
+CSRF_TRUSTED_ORIGINS = ['https://howe2-howe2.dfiod7.easypanel.host', 'https://howe2training.com']
