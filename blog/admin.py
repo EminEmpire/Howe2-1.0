@@ -1,10 +1,8 @@
 from django.contrib import admin
-from image_cropping import ImageCroppingMixin
-from .models import BlogPost, BlogImage
+from .models import BlogPost
 
-class BlogPostAdmin(ImageCroppingMixin, admin.ModelAdmin):
-    list_display = ('title', 'published_date', 'created_at', 'updated_at')
-    list_editable = ('published_date',)
-
-admin.site.register(BlogPost, BlogPostAdmin)
-admin.site.register(BlogImage)
+@admin.register(BlogPost)
+class BlogPostAdmin(admin.ModelAdmin):
+    list_display = ('title', 'published_date')
+    fields = ('title', 'content', 'published_date', 'image')
+    ordering = ('-published_date',)
