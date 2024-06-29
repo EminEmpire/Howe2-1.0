@@ -30,8 +30,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', 'howe2training.com', '127.0.0.1']
-
+ALLOWED_HOSTS = ['howe2-filebrowser.dfiod7.easypanel.host', 'howe2training.com', 'www.howe2training.com', 'localhost', '0.0.0.0',  '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
