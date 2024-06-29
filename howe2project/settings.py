@@ -11,7 +11,11 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 from pathlib import Path
-from .env import DEBUG, SECRET_KEY, DATABASE_NAME, DATABASE_USER, DATABASE_PASSWORD, DATABASE_HOST, DATABASE_PORT
+from dotenv import load_dotenv
+import dj_database_url
+
+load_dotenv()
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,10 +25,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = SECRET_KEY
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = DEBUG
+DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', 'howe2training.com', '127.0.0.1']
 
@@ -87,14 +91,19 @@ WSGI_APPLICATION = 'howe2project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': DATABASE_NAME,
-        'USER': DATABASE_USER,
-        'PASSWORD': DATABASE_PASSWORD,
-        'HOST': DATABASE_HOST,
-        'PORT': DATABASE_PORT,
+    'ENGINE': 'django.db.backends.postgresql',
+    'NAME': os.getenv('PGDATABASE'),
+    'USER': os.getenv('PGUSER'),
+    'PASSWORD': os.getenv('PGPASSWORD'),
+    'HOST': os.getenv('PGHOST'),
+    'PORT': os.getenv('PGPORT', '5432'), # Default PostgreSQL port
+    'OPTIONS': {
+    'sslmode': os.getenv('PGSSLMODE'),
+    },
     }
 }
+
+
 
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',  # default
