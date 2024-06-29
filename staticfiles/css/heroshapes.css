@@ -1,0 +1,69 @@
+header.masthead .bg-circle {
+  z-index: 0;
+  position: absolute;
+  border-radius: 100%;
+}
+
+header.masthead .bg-circle-1 {
+  height: 30rem;
+  width: 30rem;
+  bottom: 0rem;
+  left: -5rem;
+  background: linear-gradient(0deg, #5ebbff 0%, #00518c 100%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  transform: rotate(95deg);
+  z-index: 0;
+}
+
+header.masthead .bg-circle-2 {
+  height: 20rem;
+  width: 20rem;
+  top: 5rem;
+  right: -5rem;
+  background: linear-gradient(0deg, #5ebbff 0%, #00518c 100%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+@media (max-width: 450px) {
+  header.masthead .bg-circle-2 {
+    height: 20rem;
+    width: 20rem;
+    top: 1rem;
+    right: -9rem;
+    background: linear-gradient(0deg, #5ebbff 0%, #00518c 100%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  }
+}
+
+header.masthead .bg-circle-4 {
+  height: 30rem;
+  width: 30rem;
+  top: -5rem;
+  right: 35%;
+  background: linear-gradient(0deg, #5ebbff 0%, #00518c 100%);
+  z-index: 0;
+}
+
+header.masthead .bg-circle-3 {
+  height: 20rem;
+  width: 20rem;
+  bottom: -1rem;
+  right: 6%;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  transform: rotate(-11deg);
+  background: linear-gradient(0deg, #5ebbff 0%, #00518c 100%);
+  z-index: 0;
+}
+
+@media (max-width: 450px) {
+  header.masthead .bg-circle-1 {
+    height: 30rem;
+    width: 30rem;
+    bottom: -1rem;
+    left: -21rem;
+    background: linear-gradient(0deg, #5ebbff 0%, #00518c 100%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    transform: rotate(95deg);
+  }
+}
+

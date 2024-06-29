@@ -1,0 +1,21 @@
+
+{% extends "base.html" %}
+{% load static %}
+   
+{% block content %} 
+     <header class="text-center text-white masthead" style="background: linear-gradient(#00518c 0%, white 91%), #00518c;">
+        <div class="masthead-content">
+            <div class="container" data-aos="fade"><span data-aos="fade" style="font-size: 48px;font-family: Catamaran, sans-serif;text-shadow: 0px 2px 3px var(--bs-emphasis-color);border-bottom: 3.5px solid rgb(154,23,28);"><strong>404</strong></span></div>
+        </div>
+        <div data-aos="flip-down" data-aos-duration="1000" class="bg-circle-4 bg-circle"></div>
+        <div data-aos="zoom-in" data-aos-delay="500" class="bg-circle-2 bg-circle" style="transform: rotate(-63deg);"></div>
+        <div class="row" style="text-align: center;">
+            <div class="col order-lg-1">
+                <div class="p-5"><img class="rounded-circle img-fluid" data-aos="zoom-in" data-aos-duration="500" src="{% static 'img/WhatsApp%20Image%202024-06-23%20at%2012.54.32.webp' %}" style="height: auto;width: 442px;">
+                    <h2 class="display-4" data-aos="fade-down-right" data-aos-duration="150">Oops!<br><span style="font-weight: normal !important;">Looks Like You're Lost! </span></h2>
+                    <p data-aos="fade-up-right" data-aos-duration="200" data-aos-delay="250" style="font-family: Merienda, serif;color: rgb(31,31,31);"><a href="{% url 'home' %}" style="color: rgb(232,36,43);font-family: Catamaran, sans-serif;font-size: 32px;">GO BACK TO SAFETY !</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock %} 
